@@ -1,5 +1,4 @@
-# MisaLand
-
+# MLAND
 ## Project setup
 ```
 npm install
