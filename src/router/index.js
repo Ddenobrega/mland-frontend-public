@@ -1,44 +1,43 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Quotes from '../views/Quotes.vue'
-import MisaLand from '../views/MisaLand.vue'
-import Gayms from '../views/Gayms.vue'
-import Utils from '../views/Utils.vue'
-import Staff from '../views/Mod.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Quotes from "../views/Quotes.vue";
+import MLand from "../views/MLand.vue";
+import Gayms from "../views/Gayms.vue";
+import Utils from "../views/Utils.vue";
+import Staff from "../views/Mod.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: MisaLand
+    path: "/",
+    name: "Home",
+    component: MLand,
   },
 
   {
-    path: '/quotes',
-    name: 'Quotes',
+    path: "/quotes",
+    name: "Quotes",
     component: Quotes,
   },
 
   {
-    path: '/gayms',
+    path: "/gayms",
     name: "Gayms",
-    component: Gayms
+    component: Gayms,
   },
   {
-    path: '/utils',
+    path: "/utils",
     name: "Utils",
-    component: Utils
+    component: Utils,
   },
   {
-    path: '/staff/applications',
-    name: 'Staff',
-    component: Staff
-  }
-
-]
+    path: "/staff/applications",
+    name: "Staff",
+    component: Staff,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
